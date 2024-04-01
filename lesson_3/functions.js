@@ -29,6 +29,7 @@ function add (x, y){
 
 
 }
+console.log(add (5, 3 ));
 
 
 

@@ -31,6 +31,11 @@ function add (x, y){
 }
 console.log(add (5, 3 ));
 
+function fun(){
+  alert('use your camera');
+}
+fun();
+
 
 
 

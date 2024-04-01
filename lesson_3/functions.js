@@ -36,6 +36,12 @@ function fun(){
 }
 fun();
 
+function add(x, y){
+  let number = x + y;
+  return number;
+}
+console.log(add (40, 100))
+
 
 
 

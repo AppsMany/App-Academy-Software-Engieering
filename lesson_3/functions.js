@@ -22,6 +22,14 @@ happyBirthday( 'you', 23);
 happyBirthday( 'patric', 40);
 happyBirthday( 'jacktone', 40);
 
+function add (x, y){
+
+  let number = x + y;
+  return number;
+
+
+}
+
 
 
 

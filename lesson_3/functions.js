@@ -9,7 +9,15 @@ function metro(username, music, ski){
     console.log(`trav came along way in the album ${ski}` )
 
 }
-metro('producer', 'album', 'fien' )
+metro('producer', 'album', 'fien' );
+
+function happyBirthday(bigHeaad, age){
+  console.log('happy birthday')
+  console.log('happy birthday to you')
+  console.log(`happy  birthday to ${bigHeaad}`)
+  console.log('happy birthday happy')
+  console.log(`happy birthday you are ${age} years old`)
+}
 
 
 

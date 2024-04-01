@@ -18,6 +18,10 @@ function happyBirthday(bigHeaad, age){
   console.log('happy birthday happy')
   console.log(`happy birthday you are ${age} years old`)
 }
+happyBirthday( 'you', 23);
+happyBirthday( 'patric', 40);
+happyBirthday( 'jacktone', 40);
+
 
 
 

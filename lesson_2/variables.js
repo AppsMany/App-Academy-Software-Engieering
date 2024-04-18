@@ -13,3 +13,5 @@ console.log(Num + 20);
 
 let num;
 console.log(num * 2)
+let num;
+console.log(num * 2)

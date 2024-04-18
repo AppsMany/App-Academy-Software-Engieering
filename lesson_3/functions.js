@@ -1,6 +1,18 @@
 function sayHi(){
     console.log('saying hii');
 }
+console.log(add (5, 3 ));
+
+function fun(){
+  alert('use your camera');
+}
+fun();
+
+function add(x, y){
+  let number = x + y;
+  return number;
+}
+console.log(add (40, 100))
 
 sayHi();
 function metro(username, music, ski){

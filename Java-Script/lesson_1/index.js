@@ -24,3 +24,4 @@ console.log(true && true);    //prints out true
 
 console.log(false || true );  //prints out true
 console.log(true || false );  //prints out true
+// javascript code

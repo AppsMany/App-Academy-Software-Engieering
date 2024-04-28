@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+    <h3>Navigate this page</h3>
+        <ul>
+            <li ><a href="#Intro-to-css">Introduction to css</a><strong></strong></li>
+            <li><a href="#Css-Selectors">Css-Selectors</a><strong></strong></li>
+            <li> <a href="#Compound-Class-Selectors">Compound claass selectors</a><strong></strong></li>
+            <li><a href="#One-rule,-many-selectors">One rule, many selectors</a><strong></strong></li>
+            <li><a href="#Combinators">Combinators</a><strong></strong></li>
+            <li>e.t.c</li>
+        </ul>
+    <h1 id="Intro-to-css">Intro to Css</h1>
+    <h2>Css selectors</h2>
+
+    <p>Html without Css is like Tv without color, like like a cake without icing, or like a gift without wrapping paper -- extremely sad! HTML and CSS work closely together to create the beautiful interfaces a user sees on the front end, and it's important to understand how they are interrelated</p>
+
+
+    <p>In this reading, we'll go over how to use CSS classes and selectors to style HTML elements. We will review how to target specific elements via their attributes by using CSS attribute selectors. Adding CSS attributes to elements is one of the building blocks of becoming a front-end engineer, so start getting comfortable using them!</p>
+
+    <h2>CSS selectors</h2>
+
+    <p>
+        The Document Object Model, often referred to as the DOM, is a representation of the content and structure of a web document, or web page. A CSS selector applies styles to a specific DOM element or elements. A selector can be any of the following basic types:
+    </p>
+        <ul>
+            <li>
+                <strong>Type selectors</strong> --  matches elements by node name (e.g. div, li, a, p)
+
+            </li>
+            <li>
+                <strong>Class selectors</strong> -- matches elements by class name (e.g. button class=“active”>)
+            </li>
+            <li>
+                <strong>ID selectors</strong> -- matches elements by ID name (e.g.  id=”list-1”)
+            </li>
+            <li>
+                <strong>Universal selectors</strong> -- matches elements of any type
+            </li>
+            <li>
+                <strong>Attribute selectors</strong> --  matches elements based on the presence or value of a given attribute.
+            </li>
+        </ul>
+        <h2 id="Css-Selectors">Class selectors</h2>
+        <p>You will probably be using class selectors the most often in your CSS, since they will apply styles to every element that has a particular class name. Let’s look at an example of using a class selector to style multiple elements.</p>
+        <p>We want to style all elements with the class of "boxy" to have:</p>
+            <ul>
+                <li>A border-radius of 4px</li>
+                <li>A box-shadow with a y-offset of 2px</li>
+                <li>A blur of 2px</li>
+                <li>A black background-color that is 20% opaque
+                </li>
+            </ul>
+            <h2 id="Compound-Class-Selectors">Compound-class-selectors</h2>
+            <p>Quite often, you will have elements in your HTML that have more than one class applied to them. Consider the following example that has three div elements each with two classes.</p>
+            <h2 id="One-rule,-many-selectors"></h2>
+            <p>What if we wanted to italicize all H1 and H2 elements in the document? We can conveniently apply the same styles to multiple elements by combining selectors, separated by a comma. Here is how we would italicize all H1s and H2s:</p>
+            <p>Now, what if we wanted to italicize only H1s with the ID "heading" and H2s with the class name "subheading". We could combine tag selectors with ID or class selectors by writing the tag name immediately followed by the ID or class selector. Again, we can apply the same styles to multiple elements by comma separating the selectors.</p>
+            <h2 id="Combinators">Combinators</h2>
+            <p>Combinators are a type of CSS selector that combine other selectors into more complex or targeted selectors. There aren't that many, and they're very powerful. Please note, though, that using a lot of them in your CSS can quickly grow the complexity of your CSS such that it becomes incomprehensible and unmaintainable. Please, use them with moderation.</p>
+            <h2>Descendant selectors</h2>
+            <p>The descendant selector is represented by two selectors with just white space in between them (syntax: A(spaces, tabs, line breaks)B). This will select any element (B) that is a descendant of the first element (A).</p>
+            <p>Let’s look at an example. We want to style all ABBR elements contained in P elements so that all the content of the ABBR is uppercase.
+
+            We can use the following CSS to achieve the above specs:</p>
+            <p>Given the HTML and CSS above, the uppercase style would be applied to the ABBR elements containing "html", "css", "gif" and "ted" because they are all descendants of a DIV element. The ABBR elements containing "nasa" and "ufo" are not descendants of a DIV element and would remain lowercase.</p>
+            <p>Because the descendant selector just looks at white space between the different selectors, the following two will work just as well in your browser. However, don't do this! This is bad and unmaintainable code.</p>
+            <h2>Direct child selector</h2>
+            <p>The  selector selects nodes that are direct children of the first element (syntax: A > B). It will match every element B that is immediately nested inside an element A. This is different than the descendant selector because it selects only the direct children of an element.</p>
+            <p>Let’s look at an example. We want to style all <strong>elements with the "is-active" class that are direct children of elements with the "menu" class </strong>to have a #FFE0B2 background color.</p>
+            <h2>Adjacent sibling selectors</h2>
+            <p>The + selector selects adjacent siblings (syntax: A + B). This means that the second element (B) directly follows the first (A), and both share the same parent.</p>
+            <p>Let’s look at an example. We want to style all H2 elements immediately preceded by H1 elements to be italic. The style should be applied to H2s only (not H1s). We can use the following CSS to achieve the above specs:</p>
+            <p>If you had that in some CSS applied to the following HTML, the content of the H2 tags tells you what would happen.</p>
+            <h2>Pseudo-classes</h2>
+            <p>A pseudo-class specifies a special state of the selected element(s) and does not refer to any elements or attributes contained in the DOM (hence, pseudo). A pseudo-class is formed by a selector followed by a colon followed by the pseudo-class name (syntax: A:B).</p>
+            <p>Let’s look at an example. We want to style all <strong> anchor tags only when the mouse is over the content of the anchor tag </strong> to have:</p>
+                <ul>
+                    <li>The font Roboto Condensed</li>
+                    <li>The text color #4FC3F7</li>
+                    <li>No underline</li>
+                    <li>A 2px bottom border (without changing layout) with the color #4FC3F7</li>
+                </ul>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
